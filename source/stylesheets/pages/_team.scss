@@ -1,0 +1,7 @@
+.team-link {
+  color: $green;
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
