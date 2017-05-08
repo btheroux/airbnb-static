@@ -1,10 +1,97 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Home
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div class="banner" style="background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('images/background.jpg');">
+  <div class="banner-content">
+    <h1>WELCOME TO YOUR PUPPY ADVENTURE</h1>
+    <p>Explore and learn about the world with local puppy hosts in 190+ countries.</p>
+    <form action="#" class="form-inline">
+      <input type="text" class="form-control input-lg" placeholder="checkin">
+      <input type="text" class="form-control input-lg" placeholder="checkout">
+      <select name="" id="" class="form-control input-lg">
+        <option value="1">1 person</option>
+        <option value="2">2 persons</option>
+        <option value="3">3 persons</option>
+      </select>
+      <input type="submit" class="btn btn-primary btn-lg" value="Search">
+    </form>
+  </div>
+</div>
+
+<div class="container text-center padded features">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "globe.png" %>
+      <h2>Discover the world</h2>
+      <p>The earth is your new home and learn about it with your best friends, puppies.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "dollar.png" %>
+      <h2>Pay online</h2>
+      <p>No more cash issues, and customer service puppies are available 24/7 for assistance.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "beer.png" %>
+      <h2>Meet puppies & people</h2>
+      <p>Discover new culture with the help of expert puppies and have a beer with your favorite puppy.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "heart.png" %>
+      <h2>Share and love</h2>
+      <p>Join a community you will love and be able to snuggle with adorable puppies in.</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-grey padded">
+  <div class="container">
+    <h2 class="text-center">Your next puppy adventure</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-bobby.jpg');">
+          <div class="card-category">Bobby Vanderpump</div>
+          <div class="card-description">
+            <h2>Bobby's home</h2>
+            <p>Penthouse in the heart of the city above dog store.</p>
+          </div>
+          <%= image_tag "Bobby.jpg", class: "card-user avatar avatar-large" %>
+          <%= link_to "", "#", class: "card-link"%>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-billy.jpg');">
+          <div class="card-category">Puppy Paradise</div>
+          <div class="card-description">
+            <h2>Billy's home</h2>
+            <p>Puppy mansion in a backyard, with superb view of forest.</p>
+          </div>
+          <%= image_tag "Billy.jpg", class: "card-user avatar avatar-large" %>
+          <%= link_to "", "#", class: "card-link"%>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-billy-bob.jpg');">
+          <div class="card-category">Puppy Palace</div>
+          <div class="card-description">
+            <h2>Billy-bob's home</h2>
+            <p>Puppy mansion in a backyard in the heart of suburbia.</p>
+          </div>
+          <%= image_tag "Billy-bob.jpg", class: "card-user avatar avatar-large" %>
+          <%= link_to "", "#", class: "card-link"%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial "map" %>
+
+<div class="text-center padded" id="newsletter">
+  <h2>Get news from us</h2>
+  <p>Leave us your mail and get news from us</p>
+  <form class="form-inline">
+    <input type="email" placeholder="bob@gmail.com" class="form-control">
+    <input type="submit" value="Subscribe" class="btn btn-primary">
+  </form>
 </div>
